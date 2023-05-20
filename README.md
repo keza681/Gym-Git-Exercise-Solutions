@@ -68,7 +68,7 @@ branch 'dev' set up to track 'origin/dev'.
 ```
 
 
-#### Exercise 2
+### Exercise 2
 
 ```bash
 -> lindakezab@LINDAs-MacBook training % touch homme.html
@@ -140,4 +140,41 @@ Changes to be committed:
 Dropped stash@{0} (811eea98c0fb7af757cbe372e850bfe9bcef6418)
 -> lindakezab@LINDAs-MacBook training % git reset --hard HEAD~1
 HEAD is now at ad6b9ac Made changes to the readme file
+```
+
+
+
+## Bundle 2
+
+### Exercise 1
+
+```bash
+/Users/lindakezab/.zshrc:9: command not found: rbenv
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout -b ft/bundle
+-2
+Switched to a new branch 'ft/bundle-2'
+-> lindakezab@LINDAs-MacBook Git-Practice % touch services.html
+-> lindakezab@LINDAs-MacBook Git-Practice % git add .
+-> lindakezab@LINDAs-MacBook Git-Practice % git add .               
+-> lindakezab@LINDAs-MacBook Git-Practice % git commit -m "Made some changes to services. html file"
+[ft/bundle-2 f743302] Made some changes to services. html file
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
+-> lindakezab@LINDAs-MacBook Git-Practice % git push -u origin ft/bun
+dle-2
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 267 bytes | 133.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/keza681/Git-Practice/pull/new/ft/bundle-2
+remote: 
+To https://github.com/keza681/Git-Practice.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+-> lindakezab@LINDAs-MacBook Git-Practice % 
 ```
