@@ -259,3 +259,380 @@ Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/keza681/Git-Practice.git
    ce044a6..e0af171  ft-service-redesign -> ft-service-redesign
 ```
+
+## Bundle 3
+
+
+### Exercise 1
+
+```bash
+Book Git-Practice % git push -u origin ft/tea
+m-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 250 bytes | 250.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/keza681/Git-Practice/pull/new/ft/team-page
+remote: 
+To https://github.com/keza681/Git-Practice.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout -b ft/contac
+t-page
+Switched to a new branch 'ft/contact-page'
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout ft/team-page
+
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git log
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce044a6 7cfcd42
+Author:
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmai
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf5
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf599
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce044a6 7cfcd42
+Author:
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +02
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce044a6 7cfcd42
+Author:
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce044a6 7cfcd42
+Author:
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce044a6 7cfcd42
+Author:
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce044a6 7cfcd42
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 10:53:02 2023 +0200
+:
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout 
+ft/contact-page
+Switched to branch 'ft/contact-page'
+-> lindakezab@LINDAs-MacBook Git-Practice % git
+-> lindakezab@LINDAs-MacBook Git-Practice % git cherry-pick 2223b32e0f51961fd6ce97dad06e3f3c88b3483b
+[ft/contact-page 63df400] Add new file for team page
+ Date: Mon May 22 11:08:48 2023 +0200
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && 
+git commit -m "Update contact page"
+[ft/contact-page 7bc1bb8] Update contact page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 contact.html
+-> lindakezab@LINDAs-MacBook Git-Practice % git push -u o
+rigin ft/contact-page
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 520 bytes | 260.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/keza681/Git-Practice/pull/new/ft/contact-page
+remote: 
+To https://github.com/keza681/Git-Practice.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout 
+-b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+-> lindakezab@LINDAs-MacBook Git-Practice % touch faq.htm
+l
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && 
+git commit -m "Add new file faq.html page"
+[ft/faq-page 465026b] Add new file faq.html page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 faq.html
+-> lindakezab@LINDAs-MacBook Git-Practice % git push -u o
+rigin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 245 bytes | 245.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/keza681/Git-Practice/pull/new/ft/faq-page
+remote: 
+To https://github.com/keza681/Git-Practice.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout 
+ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git log
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +02
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce044a6 7cfcd42
+Author:
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce044a6 7cfcd42
+Author:
+commit 2223b32e0f51961fd6ce97dad06e3f3c88b3483b (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 11:08:48 2023 +0200
+
+    Add new file for team page
+
+commit e0af171f9e57a3deea1ea6cbbf59981c2ee6ed7d (origin/ft-service-redesign, ft-service-redesign)
+Merge: ce044a6 7cfcd42
+Author: Martine Linda <lindakeza19@gmail.com>
+Date:   Mon May 22 10:53:02 2023 +0200
+:
+nce   e
+diting star  t
+ed
+See ":help   W
+11" for mor  e
+ info.
+[O]K, (L)oa  d
+-- More
+ File, Load File (a)nd Options: 
+ -> lindakezab@LINDAs-MacBook Git-Practice % git push 
+Everything up-to-date
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && 
+git commit -m "Reverted last commit"
+[ft/team-page 8ad0db1] Reverted last commit
+ 1 file changed, 12 deletions(-)
+ delete mode 100644 team.html
+-> lindakezab@LINDAs-MacBook Git-Practice % git push 
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3Counting objects:  66% (2/3Counting objects: 100% (3/3Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects:  50% (Compressing objects: 100% (Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 234 bytes | 234.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:  remote: Resolving deltas: 1remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/keza681/Git-Practice.git
+   2223b32..8ad0db1  ft/team-page -> ft/team-page
+-> lindakezab@LINDAs-MacBook Git-Practice % 
+```
+
+### Exercise 2
+```bash
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout -b ft/home-p
+age-redesign
+Switched to a new branch 'ft/home-page-redesign'
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit -
+m "Update the main branch"
+[main d49b2b6] Update the main branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout ft/home-page
+-redesign
+Switched to branch 'ft/home-page-redesign'
+-> lindakezab@LINDAs-MacBook Git-Practice % git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit "
+Rebased the main branch to this branch and add changes to the home page"
+error: pathspec 'Rebased the main branch to this branch and add changes to the home page' did not match any file(s) known to git
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit m "Rebased the main branch to this branch and add changes to the home page"
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'Rebased the main branch to this branch and add changes to the home page' did not match any file(s) known to git
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit -m "Rebased the main branch to this branch and add changes to the home page"
+[ft/home-page-redesign e256932] Rebased the main branch to this branch and add changes to the home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-> lindakezab@LINDAs-MacBook Git-Practice % git push -u origin ft/hom
+e-page-redesign
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 1.34 KiB | 684.00 KiB/s, done.
+Total 13 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/keza681/Git-Practice/pull/new/ft/home-page-redesign
+remote: 
+To https://github.com/keza681/Git-Practice.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+-> lindakezab@LINDAs-MacBook Git-Practice % 
+```
