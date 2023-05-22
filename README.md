@@ -178,3 +178,84 @@ To https://github.com/keza681/Git-Practice.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 -> lindakezab@LINDAs-MacBook Git-Practice % 
 ```
+
+
+### Exercise 2
+
+```bash
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout -b ft-service-redesign
+Switched to a new branch 'ft-service-redesign'
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit -
+m "Made some changes to the service page"    
+[ft-service-redesign ce044a6] Made some changes to the service page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-> lindakezab@LINDAs-MacBook Git-Practice % git push -u origin ft-ser
+vice-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft-service-redesign' on GitHub by visiting:
+remote:      https://github.com/keza681/Git-Practice/pull/new/ft-service-redesign
+remote: 
+To https://github.com/keza681/Git-Practice.git
+ * [new branch]      ft-service-redesign -> ft-service-redesign
+branch 'ft-service-redesign' set up to track 'origin/ft-service-redesign'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit -
+m "Add new changes to the service page"
+[main 7cfcd42] Add new changes to the service page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-> lindakezab@LINDAs-MacBook Git-Practice % git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 347 bytes | 347.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/keza681/Git-Practice.git
+   1fb136c..7cfcd42  main -> main
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout ft-service-r
+edesign
+Switched to branch 'ft-service-redesign'
+Your branch is up to date with 'origin/ft-service-redesign'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git diff main..ft-service
+-redesign
+diff --git a/services.html b/services.html
+index 7428d29..e8da765 100644
+--- a/services.html
+index 7428d29..e8da765 100644
+--- a/services.html
+index 7428d29..e8da765 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+     <title>Document</title>
+ </head>
+ <body>
+-    <h1>Hello ojemba x The Gym</h1>
++    <h1>hello Ojemba x The gym</h1>
+ </body>
+ </html>
+\ No newline at end of file
+(END)
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit -m "fix conflict"
+[ft-service-redesign e0af171] fix conflict
+-> lindakezab@LINDAs-MacBook Git-Practice % git push 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 218 bytes | 218.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/keza681/Git-Practice.git
+   ce044a6..e0af171  ft-service-redesign -> ft-service-redesign
+```
