@@ -636,3 +636,171 @@ To https://github.com/keza681/Git-Practice.git
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 -> lindakezab@LINDAs-MacBook Git-Practice % 
 ```
+
+## Bundle 4
+
+### Exercise 1
+```bash
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+-> lindakezab@LINDAs-MacBook Git-Practice % git branch
+  dev
+  ft-service-redesign
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+-> lindakezab@LINDAs-MacBook Git-Practice % git switch main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+-> lindakezab@LINDAs-MacBook Git-Practice % git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/keza681/Git-Practice.git
+   7cfcd42..d49b2b6  main -> main
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git remote add git-copy https://github.com/keza681/Git-practice-two.git
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit -m "Update the home page"
+[main cae95ca] Update the home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-> lindakezab@LINDAs-MacBook Git-Practice % git branch -M main
+-> lindakezab@LINDAs-MacBook Git-Practice % git push -u git-copy main
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 2.44 KiB | 832.00 KiB/s, done.
+Total 19 (delta 8), reused 3 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/keza681/Git-practice-two.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'git-copy/main'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 25.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/keza681/Git-Practice.git
+   d49b2b6..cae95ca  main -> main
+branch 'main' set up to track 'origin/main'.
+```
+
+### Exercise 2
+```bash
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout -b ft/footer
+
+Switched to a new branch 'ft/footer'
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit -
+m "Add changes to the branch"
+[ft/footer c48daf5] Add changes to the branch
+ 1 file changed, 1 insertion(+)
+-> lindakezab@LINDAs-MacBook Git-Practice % git add . && git commit -m "Add some other changes to the branch"
+[ft/footer 96838fe] Add some other changes to the branch
+ 1 file changed, 1 insertion(+)
+-> lindakezab@LINDAs-MacBook Git-Practice % git push -u origin ft/foo
+ter
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 622 bytes | 622.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/keza681/Git-Practice/pull/new/ft/footer
+remote: 
+To https://github.com/keza681/Git-Practice.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+-> lindakezab@LINDAs-MacBook Git-Practice % git branch
+  dev
+  ft-service-redesign
+  ft/bundle-2
+  ft/contact-page
+  ft-service-redesign
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/footer
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+  dev
+  ft-service-redesign
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/footer
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+~
+-> lindakezab@LINDAs-MacBook Git-Practice % git checkout -b ft/squash
+ing
+Switched to a new branch 'ft/squashing'
+-> lindakezab@LINDAs-MacBook Git-Practice % git merge --squash ft/footer 
+Updating cae95ca..96838fe
+Fast-forward
+Squash commit -- not updating HEAD
+ homme.html | 2 ++
+ 1 file changed, 2 insertions(+)
+-> lindakezab@LINDAs-MacBook Git-Practice % git add .
+-> lindakezab@LINDAs-MacBook Git-Practice % git commit -m "footer changes squashing"
+[ft/squashing 11b1294] footer changes squashing
+ 1 file changed, 2 insertions(+)
+-> lindakezab@LINDAs-MacBook Git-Practice % git push -u origin ft/squ
+ashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 351 bytes | 351.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/keza681/Git-Practice/pull/new/ft/squashing
+remote: 
+To https://github.com/keza681/Git-Practice.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+```
+
+
+## Bundle 5
+
+### Exercise 2
+```bash
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git add . && git commit -m "Update the index.html file"
+[main 41fd5ae] Update the index.html file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/keza681/git-cafe-exercise.git
+   d1d3f9c..41fd5ae  main -> main
+```
