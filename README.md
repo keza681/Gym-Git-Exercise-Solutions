@@ -804,3 +804,80 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/keza681/git-cafe-exercise.git
    d1d3f9c..41fd5ae  main -> main
 ```
+
+## Bundle 6
+
+### Exercise 1
+
+```bash
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git checkout -b ft/menu-pag
+e
+Switched to a new branch 'ft/menu-page'
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git add . && git commit -m 
+"Add new page Menu"
+[ft/menu-page 34e2a40] Add new page Menu
+ 1 file changed, 12 insertions(+)
+ create mode 100644 menu.html
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git push -u origin ft/menu-
+page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 457 bytes | 457.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/menu-page' on GitHub by visiting:
+remote:      https://github.com/keza681/git-cafe-exercise/pull/new/ft/menu-page
+remote: 
+To https://github.com/keza681/git-cafe-exercise.git
+ * [new branch]      ft/menu-page -> ft/menu-page
+branch 'ft/menu-page' set up to track 'origin/ft/menu-page'.
+```
+
+### Exercise 2
+
+```bash
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git checkout -b ft/bug-fix
+Switched to a new branch 'ft/bug-fix'
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git add . && git com
+mit -m "Change the title of the page"
+[ft/bug-fix 4f6f02c] Change the title of the page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git push -u origin f
+t/bug-fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/bug-fix' on GitHub by visiting:
+remote:      https://github.com/keza681/git-cafe-exercise/pull/new/ft/bug-fix
+remote: 
+To https://github.com/keza681/git-cafe-exercise.git
+ * [new branch]      ft/bug-fix -> ft/bug-fix
+branch 'ft/bug-fix' set up to track 'origin/ft/bug-fix'.
+```
+
+### Exercise 3
+
+```bash
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git add . && git commit -m "Updated the telephone number"
+[ft/bug-fix b3f45cf] Updated the telephone number
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-> lindakezab@LINDAs-MacBook git-cafe-exercise % git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/keza681/git-cafe-exercise.git
+   4f6f02c..b3f45cf  ft/bug-fix -> ft/bug-fix
+```
+
